@@ -1,0 +1,1 @@
+// Trigger test: updated script to verify GitHub webhook and PR automation workflow

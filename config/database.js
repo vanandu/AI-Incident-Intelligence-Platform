@@ -1,6 +1,8 @@
-// Trigger test - database update
-const DB_VERSION = "1.0.1";
+// Database configuration
+const DB_VERSION = "1.0.2";
 
 module.exports = {
-  DB_VERSION
+  DB_VERSION,
+  CONNECTION_TIMEOUT: 5000,
+  POOL_SIZE: 10,
 };

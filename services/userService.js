@@ -1,18 +1,9 @@
-// User Service
-
-const users = [];
+const users = new Map();
 
 function createUser(user) {
-  user.createdAt = new Date();
-  users.push(user);
-  return user;
+    users.set(user.email, user);
 }
 
-function getUserByEmail(email) {
-  return users.find(user => user.email === email);
+function getUser(email) {
+    return users.get(email);
 }
-
-module.exports = {
-  createUser,
-  getUserByEmail,
-};

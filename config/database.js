@@ -1,8 +1,8 @@
-// Database configuration
-const DB_VERSION = "1.0.2";
-
 module.exports = {
-  DB_VERSION,
-  CONNECTION_TIMEOUT: 5000,
-  POOL_SIZE: 10,
+    host: process.env.DB_HOST,
+    port: process.env.DB_PORT,
+    poolSize: 100,
+    connectionTimeout: 1000,
+    ssl: true,
+    retryAttempts: 5
 };
